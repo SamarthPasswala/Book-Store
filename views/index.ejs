@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: rgb(238, 174, 202);
+            background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            height: 90px;
+        }
+
+        .nav-link {
+            color: #333 !important;
+        }
+
+        .nav-link:hover {
+            color: #ff4081 !important;
+        }
+
+        form .form-control {
+            border-radius: 20px;
+            padding: 0.75rem 1.25rem;
+            margin-right: 10px;
+        }
+
+        form .btn-outline-pink {
+            border: 1px solid #ff4081;
+            color: #ff4081;
+            border-radius: 20px;
+            padding: 0.75rem 1.25rem;
+        }
+
+        form .btn-outline-pink:hover {
+            background-color: #ff4081;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        h1 .highlight {
+            color: #ff4081;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top {
+            margin-top: 10%;
+        }
+
+        .b-1 {
+            margin-left: 39%;
+            width: 140px;
+        }
+
+        .b-2 {
+            margin-left: 37%;
+            width: 143px;
+        }
+
+        .b-3 {
+            margin-left: 37%;
+            width: 143px;
+        }
+
+        .b-4 {
+            margin-left: 37%;
+            width: 126px;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            color: #333;
+        }
+
+        .card-text {
+            color: #777;
+        }
+
+        .btn-pink {
+            background-color: #ff4081;
+            color: #fff;
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+        }
+
+        .btn-pink:hover {
+            background-color: #e6366b;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgb(238, 174, 202);
+            background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/"><img
+                    src="https://imgs.search.brave.com/8-GBPFyPcJ0kT05q0johz21suhWy864E3GaKb9FtIQY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzAxLzI4LzUw/LzM2MF9GXzUwMTI4/NTA0NV9QeWI4THNy/N3lUSzJqMHE0a1Vz/QldDUGdXMllyOTE1/QS5qcGc"
+                    class="logo"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/view">View</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/add">Add</a></li>
+                </ul>
+            </div>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search by book title"
+                    aria-label="Search">
+                <button class="btn btn-outline-pink my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="mt-5">Find the book <span class="highlight">you've been looking for</span></h1>
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/91WlvEND3rL._SL1500_.jpg" alt="Book 1"
+                            class="card-img-top b-1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">JAVASCRIPT PATTERN</h5>
+                        <p class="card-text">ADDY OSMANI</p>
+                        <p class="card-text">20<sup>th</sup>December,2009</p>
+                        <a href="#" class="btn btn-outline-secondary">More Details</a>
+                        <a href="#" class="btn btn-pink">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/91UlU666haL._SL1500_.jpg" class="card-img-top b-2"
+                        alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">HACKING</h5>
+                        <p class="card-text">JON ERICKSON</p>
+                        <p class="card-text">17<sup>th</sup>January,2016</p>
+                        <a href="#" class="btn btn-outline-secondary">More Details</a>
+                        <a href="#" class="btn btn-pink">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/51E2055ZGUL._SL1000_.jpg" class="card-img-top b-3"
+                        alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">CLEAN CODE</h5>
+                        <p class="card-text">ROBERT C. MARTIN</p>
+                        <p class="card-text">7<sup>th</sup>June,2020</p>
+                        <a href="#" class="btn btn-outline-secondary">More Details</a>
+                        <a href="#" class="btn btn-pink">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71Rka58zH1L._SL1246_.jpg" class="card-img-top b-4"
+                        alt="Book 4">
+                    <div class="card-body">
+                        <h5 class="card-title">MANAGING HUMANS</h5>
+                        <p class="card-text">MICHAEL LOPP</p>
+                        <p class="card-text">8<sup>th</sup>February,2010</p>
+                        <a href="#" class="btn btn-outline-secondary">More Details</a>
+                        <a href="#" class="btn btn-pink">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container mt-5">
+        <p>435 Tresdale Road, Entertainment District, Fictional City, XA 27402</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
